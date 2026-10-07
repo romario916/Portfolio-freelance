@@ -20,7 +20,7 @@ const FAQ = () => {
           {
             question: "Comment se passe le paiement ?",
             answer:
-              "[À DÉFINIR] Les modalités de paiement sont définies avant le début du projet. Elles seront clairement indiquées dans le devis ou la proposition.",
+              " Les modalités de paiement sont définies avant le début du projet. Elles seront clairement indiquées dans le devis ou la proposition.",
           },
           {
             question:
@@ -65,7 +65,7 @@ const FAQ = () => {
           {
             question: "How does payment work?",
             answer:
-              "[TO BE DEFINED] Payment terms are agreed before the project starts. They will be clearly stated in the quote or proposal.",
+              " Payment terms are agreed before the project starts. They will be clearly stated in the quote or proposal.",
           },
           {
             question: "Can I request changes during the project?",

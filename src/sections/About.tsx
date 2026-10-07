@@ -88,7 +88,7 @@ const About = () => {
             {language === "fr" ? (
               <div className="mt-7 space-y-4 text-base leading-7 text-gray-600">
                 <p>
-                  Je suis Romario, développeur frontend spécialisé dans la
+                  Je suis RAKOTOVAO Henry Romario, développeur frontend spécialisé dans la
                   création d'interfaces web avec React et TypeScript.
                 </p>
 

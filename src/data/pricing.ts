@@ -56,7 +56,7 @@ export const pricingPlans: PricingPlan[] = [
 
 export const maintenancePlan = {
   name: "Maintenance mensuelle",
-  price: "15 € / mois",
+  price: "17 € / mois",
   description:
     "Un accompagnement continu pour garder votre site à jour et faire évoluer son contenu.",
   features: [

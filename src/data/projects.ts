@@ -3,33 +3,33 @@ import type { Project } from "../types";
 export const projects: Project[] = [
   {
     id: "tendem",
-    name: "GAMANTA",
-    category: "Restaurant / Fast-food",
+    name: "Cabinet dentaire",
+    category: "Dentiste",
     description:
-      "Site vitrine moderne conçu pour présenter les produits, le menu et les informations pratiques d'un établissement de restauration.",
+      "Site vitrine haut de gamme dédié aux chirurgiens-dentistes, idéal pour valoriser l'expertise du cabinet, présenter l'éventail des soins et rassurer la patientèle.",
     problem:
-      "[À compléter] Présenter clairement le menu et permettre aux visiteurs de trouver rapidement les informations importantes.",
+      "Présenter clairement l'ensemble des traitements et permettre aux visiteurs d'accéder facilement aux informations essentielles et aux coordonnées.",
     solution:
-      "Création d'une interface responsive avec présentation du menu, galerie, informations sur l'établissement et possibilité de contacter l'entreprise via WhatsApp.",
+      "Création d'une interface responsive avec présentation de la carte des soins, galerie photos du cabinet, informations pratiques de l'établissement et possibilité de contacter l'équipe via WhatsApp.",
     technologies: ["React", "TypeScript", "Vite", "Tailwind CSS"],
-    image: "gamanta.webp",
-    liveUrl: "https://restaurant-fast-food-frontend.vercel.app/",
+    image: "dentaire.png",
+    liveUrl: "https://dentiste-professionnelle.vercel.app/",
     githubUrl: "[LIEN GITHUB]",
   },
 
   {
-    id: "rosa-boutique",
-    name: "ROSA Boutique",
-    category: "Boutique en ligne",
+    id: "rosa-genie-civil",
+    name: "BTP Pro",
+    category: "Génie civil",
     description:
-      "Boutique web moderne permettant de présenter des produits et de préparer des commandes directement via WhatsApp.",
+      "Site vitrine moderne conçu pour présenter les expertises techniques, les réalisations de chantiers et les informations pratiques d’une entreprise de génie civil.",
     problem:
-      "[À compléter] Présenter les produits de manière claire et simplifier le parcours jusqu'à la commande.",
+      "Structurer l'offre de services de manière claire et faciliter le parcours client jusqu'à l'envoi d'une demande d'étude ou de chiffrage.",
     solution:
-      "Création d'une boutique responsive avec catalogue, fiches produits, sélection des variantes, panier et préparation de commande via WhatsApp.",
+      "Présenter clairement l’éventail des prestations et savoir-faire tout en permettant aux prospects et partenaires d'accéder rapidement aux informations clés et aux références du cabinet.",
     technologies: ["React", "TypeScript", "Vite", "Tailwind CSS"],
-    image: "rosa.webp",
-    liveUrl: "boutique-en-ligne-frontend.vercel.app",
+    image: "civil.png",
+    liveUrl: "https://site-pour-genie-civil.vercel.app/",
     githubUrl: "[LIEN GITHUB]",
   },
 

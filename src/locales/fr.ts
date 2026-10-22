@@ -52,9 +52,9 @@ const fr = {
 
   pricing: {
     eyebrow: "Offres",
-    title: "Des formules simples, adaptées à différents projets.",
+    title: "Un site web professionnel pour donner vie à vos ambitions.",
     description:
-      "Chaque projet est différent. Nous pouvons adapter la proposition à vos besoins réels.",
+      "Des solutions modernes et sur mesure pour valoriser votre activité, renforcer votre présence en ligne et inspirer confiance à vos clients.",
   },
 
   about: {

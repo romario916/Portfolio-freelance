@@ -52,9 +52,9 @@ const en = {
 
   pricing: {
     eyebrow: "Pricing",
-    title: "Simple packages for different types of projects.",
+    title: "A professional website to bring your vision to life.",
     description:
-      "Every project is different. We can adapt the proposal to your actual needs.",
+      "Modern, tailored solutions to showcase your business, strengthen your online presence, and build trust with your customers.",
   },
 
   about: {

@@ -69,7 +69,7 @@ const Pricing = () => {
 
               {plan.popular && (
                 <span className="absolute right-6 top-6 rounded-full bg-yellow-400 px-3 py-1 text-xs font-bold text-gray-950 shadow-lg shadow-yellow-400/30">
-                  {language === "fr" ? "Recommandé" : "Recommended"}
+                  {language === "fr" ? "une fois" : "once"}
                 </span>
               )}
 
@@ -109,7 +109,7 @@ const Pricing = () => {
                     }`}
                   >
                     {language === "fr"
-                      ? "Tarif indicatif à confirmer selon le projet"
+                      ? "Ce tarif indicatif s'applique à la création d'un site vitrine professionnel et premium, sur mesure et clé en main."
                       : "Indicative price to be confirmed according to the project"}
                   </p>
                 )}
@@ -243,7 +243,7 @@ const Pricing = () => {
         <p className="mt-6 text-center text-xs leading-5 text-gray-500">
           {language === "fr"
             ? "Les tarifs définitifs seront confirmés après discussion du projet, de son contenu et de ses fonctionnalités."
-            : "Final pricing will be confirmed after discussing the project, its content and its features."}
+            : "Final rates will be confirmed following a discussion of the project, its content, and its features."}
         </p>
       </div>
     </section>

@@ -8,37 +8,33 @@ export interface PricingPlan {
 
 export const pricingPlans: PricingPlan[] = [
   {
-    name: "Paiement en 3 tranches (Facilité de paiement)",
+    name: "Portfolio professionnel",
     description:
-      "1er versement (1/3) : À la livraison finale du projet. 2ème versement (1/3) : 30 jours après la livraison. 3ème versement (1/3) : 60 jours après la livraison.",
-    price: "75 € par tranche",
+      "Photographe, ingénieur, assistant virtuel, coach, artiste, consultant… Pour présenter le profil, les compétences, les projets, les services et les coordonnées.",
+    price: "200 € ",
     features: [
-      "Tout ce qui est inclus dans Essentiel",
-      "Site vitrine professionnel et premium responsive",
-      "Analyse personnalisée du projet",
-      "Estimation selon les besoins",
+      "Site vitrine portfolio professionnel ",
       "Design adapté à votre activité",
-      "Jusqu'à [3] à [7] pages",
+      "Animations légères et navigation fluide.",
+      "Le Scroll Fluid Classique professionnel (One-Page)",
       "Intégration WhatsApp ou autre",
       "Formulaire de contact",
       "Liens vers les réseaux sociaux",
-       "localisation sur google maps",
       "Optimisation mobile",
       "Optimisation SEO de base professionnel",
       "Nom de domaine inclus (1 an)",
+      "Deadline : 5 à 7 jours ouvrés",
     ],
   },
 
   {
-    name: "Paiement en une fois ",
+    name: "Site vitrine professionnel pour cabinet et établissement ",
     description:
-      "Règlement de 100 % du montant global à la livraison finale du projet. ",
-    price: "200 €",
+      "Dentiste, barber, salon de beauté, studio, centre de formation, salle de sport, école… Pour présenter les prestations, l'équipe, les horaires, les coordonnées et les moyens de contact. ",
+    price: "400 €",
     popular: true,
     features: [
-      "Tout ce qui est inclus dans Essentiel",
       "Site vitrine professionnel et premium responsive",
-      "Analyse personnalisée du projet",
       "Estimation selon les besoins",
       "Design adapté à votre activité",
       "Jusqu'à [3] à [7] pages",
@@ -49,21 +45,22 @@ export const pricingPlans: PricingPlan[] = [
       "Optimisation mobile",
       "Optimisation SEO de base professionnel",
       "Nom de domaine inclus (1 an)",
+      "Deadline : 5 à 15 jours ouvrés",
     ],
   },
 
   {
-    name: "Paiement en 5 tranches (Facilité de paiement)",
+    name: "Site vitrine professionnel ou premium pour entreprise",
     description:
-      "1er versement (1/5) : À la livraison finale du projet. 2ème versement (2/5) : 1 mois après la livraison. 3ème versement (3/5) : 2 mois après la livraison. 4ème versement (4/5) : 3 mois après la livraison. 5ème versement (5/5) : 4 mois après la livraison.",
-    price: "48 € par tranche",
+      "Génie civil, agriculture, immobilier, entreprises de services et PME… Pour présenter l'entreprise, ses projets, ses équipes, ses domaines d'activité et ses références.",
+    price: "À partir de 700 €",
     features: [
       "Tout ce qui est inclus dans Essentiel",
       "Site vitrine professionnel et premium responsive",
       "Analyse personnalisée du projet",
       "Estimation selon les besoins",
       "Design adapté à votre activité",
-      "Jusqu'à [3] à [7] pages",
+      "Plusieurs pages",
       "Intégration WhatsApp ou autre",
       "Formulaire de contact",
       "Liens vers les réseaux sociaux",
@@ -71,6 +68,7 @@ export const pricingPlans: PricingPlan[] = [
       "Optimisation mobile",
       "Optimisation SEO de base professionnel",
       "Nom de domaine inclus (1 an)",
+      "Deadline : 7 à plusieus jours",
     ],
   },
 ];

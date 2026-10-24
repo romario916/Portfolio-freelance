@@ -1,6 +1,5 @@
 import {
   ArrowUp,
-  Code2,
   Mail,
   MessageCircle,
 } from "lucide-react";

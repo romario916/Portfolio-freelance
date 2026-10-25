@@ -11,6 +11,7 @@ import About from "./sections/About";
 import FAQ from "./sections/FAQ";
 import Contact from "./sections/Contact";
 import { LanguageProvider } from "./context/LanguageContext";
+import Gallery from "./sections/Gallery";
 const App = () => {
   return (
     <LanguageProvider>
@@ -32,6 +33,8 @@ const App = () => {
            <Pricing />
 
            <About />
+
+           <Gallery />
 
            <FAQ />
        

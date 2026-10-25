@@ -42,7 +42,7 @@ const About = () => {
             <div className="relative rounded-3xl bg-gradient-to-br from-blue-500 via-violet-500 to-violet-600 p-1 shadow-2xl shadow-violet-500/25">
               <div className="aspect-[4/5] overflow-hidden rounded-[calc(1.5rem-4px)] bg-gray-200">
                 <img
-                  src="profil2.webp"
+                  src="apropo.webp"
                   alt={
                     language === "fr"
                       ? "Romario, développeur frontend React"

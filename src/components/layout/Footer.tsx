@@ -34,6 +34,7 @@ const Footer = () => {
       label: isFrench ? "À propos" : "About",
       href: "#a-propos",
     },
+    
     {
       label: "FAQ",
       href: "#faq",
@@ -150,177 +151,180 @@ const Footer = () => {
             </nav>
           </div>
 
-          {/* Contact */}
-          <div className="lg:col-span-4">
-            <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6 shadow-2xl shadow-black/30 backdrop-blur-xl">
-              <div
-                className="pointer-events-none absolute -right-12 -top-12 h-40 w-40 rounded-full bg-gradient-to-br from-blue-500/30 to-violet-500/40 blur-3xl"
-                aria-hidden="true"
-              />
+        {/* Contact */}
+<div className="lg:col-span-4">
+  <div className="group/card relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-white/[0.09] via-white/[0.04] to-white/[0.02] p-6 shadow-[0_30px_80px_-30px_rgba(0,0,0,0.9)] ring-1 ring-inset ring-white/5 backdrop-blur-2xl sm:p-8">
+    {/* Halos et filet lumineux */}
+    <div
+      className="pointer-events-none absolute -right-12 -top-12 h-48 w-48 rounded-full bg-gradient-to-br from-blue-500/35 to-violet-500/45 blur-3xl"
+      aria-hidden="true"
+    />
+    <div
+      className="pointer-events-none absolute -bottom-16 -left-16 h-44 w-44 rounded-full bg-blue-600/15 blur-3xl"
+      aria-hidden="true"
+    />
+    <div
+      className="pointer-events-none absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-blue-300/80 to-transparent"
+      aria-hidden="true"
+    />
 
-              <h2 className="relative text-xs font-semibold uppercase tracking-[0.25em] text-white">
-                {isFrench ? "Me contacter" : "Contact me"}
-              </h2>
+    <h2 className="relative text-xs font-semibold uppercase tracking-[0.3em] text-white">
+      {isFrench ? "Me contacter" : "Contact me"}
+    </h2>
 
-              <span
-                className="relative mt-3 block h-1 w-8 rounded-full bg-yellow-400"
-                aria-hidden="true"
-              />
+    <span
+      className="relative mt-4 block h-1 w-10 rounded-full bg-gradient-to-r from-blue-400 via-indigo-400 to-violet-500 shadow-[0_0_20px_rgba(129,140,248,0.7)]"
+      aria-hidden="true"
+    />
 
-              <div className="relative mt-6 space-y-3">
-                {/* Email */}
-                <a
-                  href={`mailto:${contactInfo.email}`}
-                  className="group flex items-center gap-3 rounded-2xl border border-white/5 bg-white/5 p-3 text-sm text-blue-100/80 transition-all duration-300 hover:-translate-y-0.5 hover:border-violet-400/40 hover:bg-white/10 hover:text-white"
-                >
-                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-violet-600 shadow-lg shadow-blue-600/30">
-                    <Mail
-                      className="h-4 w-4"
-                      aria-hidden="true"
-                    />
-                  </span>
-
-                  <span className="break-all">{contactInfo.email}</span>
-                </a>
-
-                {/* WhatsApp */}
-                <a
-                  href={`https://wa.me/${contactInfo.whatsapp.replace(
-                    /\D/g,
-                    "",
-                  )}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex items-center gap-3 rounded-2xl border border-white/5 bg-white/5 p-3 text-sm text-blue-100/80 transition-all duration-300 hover:-translate-y-0.5 hover:border-violet-400/40 hover:bg-white/10 hover:text-white"
-                >
-                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-violet-600 shadow-lg shadow-blue-600/30">
-                    <MessageCircle
-                      className="h-4 w-4"
-                      aria-hidden="true"
-                    />
-                  </span>
-
-                  WhatsApp
-                </a>
-              </div>
-
-              
-{/* Réseaux sociaux */}
-<div className="relative mt-6">
-  <div className="flex flex-wrap items-center gap-6">
-
-    {/* LinkedIn */}
-    <a
-      href={contactInfo.linkedin}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Visiter mon profil LinkedIn"
-      className="group flex flex-col items-center gap-3"
-    >
-      {/* Photo circulaire */}
-      <div className="relative h-20 w-20 rounded-full bg-gradient-to-br from-blue-400 via-violet-500 to-blue-600 p-[3px] shadow-lg shadow-blue-500/20 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-violet-500/40 sm:h-24 sm:w-24">
-        <div className="h-full w-full overflow-hidden rounded-full bg-slate-900">
-          <img
-            src="/profil2.webp"
-            alt="Ma photo de profil LinkedIn"
-            className="h-full w-full rounded-full object-cover transition-transform duration-500 group-hover:scale-110"
-          />
-        </div>
-
-        {/* Badge LinkedIn */}
-        <span className="absolute bottom-0 right-0 flex h-7 w-7 items-center justify-center rounded-full border-2 border-slate-950 bg-[#0A66C2] text-xs font-bold text-white shadow-md">
-          in
-        </span>
-      </div>
-
-      <span className="text-sm font-medium text-blue-100 transition-colors group-hover:text-blue-400">
-        LinkedIn
-      </span>
-    </a>
-
-    {/* GitHub */}
-    <a
-      href={contactInfo.github}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Visiter mon profil GitHub"
-      className="group flex flex-col items-center gap-3"
-    >
-      {/* Photo circulaire */}
-      <div className="relative h-20 w-20 rounded-full bg-gradient-to-br from-blue-400 via-violet-500 to-blue-600 p-[3px] shadow-lg shadow-violet-500/20 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-blue-500/40 sm:h-24 sm:w-24">
-        <div className="h-full w-full overflow-hidden rounded-full bg-slate-900">
-          <img
-            src="/profil.webp"
-            alt="Ma photo de profil GitHub"
-            className="h-full w-full rounded-full object-cover transition-transform duration-500 group-hover:scale-110"
-          />
-        </div>
-
-        {/* Badge GitHub */}
-        <span className="absolute bottom-0 right-0 flex h-7 w-7 items-center justify-center rounded-full border-2 border-slate-950 bg-[#24292e] text-white shadow-md">
-          <svg
-            viewBox="0 0 24 24"
+    <div className="relative mt-7 space-y-3">
+      {/* Email */}
+      <a
+        href={`mailto:${contactInfo.email}`}
+        className="group flex items-center gap-3.5 rounded-2xl border border-white/10 bg-white/[0.04] p-3.5 text-sm text-blue-100/80 transition-all duration-300 hover:-translate-y-0.5 hover:border-violet-300/50 hover:bg-white/[0.09] hover:text-white hover:shadow-[0_12px_40px_-15px_rgba(139,92,246,0.7)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400"
+      >
+        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 via-indigo-500 to-violet-600 text-white shadow-lg shadow-blue-600/30 ring-1 ring-inset ring-white/20 transition duration-300 group-hover:scale-105">
+          <Mail
             className="h-4 w-4"
-            fill="currentColor"
             aria-hidden="true"
-          >
-            <path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.1c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.24-1.62-1.24-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.23.92.1-.72.39-1.21.7-1.49-2.48-.28-5.08-1.24-5.08-5.52 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.05 1.14a10.6 10.6 0 0 1 5.56 0c2.12-1.44 3.05-1.14 3.05-1.14.61 1.54.23 2.68.12 2.96.71.78 1.14 1.78 1.14 3.01 0 4.29-2.6 5.23-5.09 5.51.4.35.75 1.03.75 2.08v3.06c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z" />
-          </svg>
+          />
         </span>
-      </div>
 
-      <span className="text-sm font-medium text-blue-100 transition-colors group-hover:text-violet-400">
-        GitHub
-      </span>
-    </a>
+        <span className="break-all">{contactInfo.email}</span>
+      </a>
 
-  
-{/* Instagram */}
-<a
-  href={contactInfo.instagram}
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label="Visiter mon profil Instagram"
-  className="group flex flex-col items-center gap-3"
->
-  {/* Photo circulaire */}
-  <div className="relative h-20 w-20 rounded-full bg-gradient-to-br from-yellow-400 via-pink-500 to-purple-600 p-[3px] shadow-lg shadow-pink-500/20 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-pink-500/40 sm:h-24 sm:w-24">
-    <div className="h-full w-full overflow-hidden rounded-full bg-slate-900">
-      <img
-        src="/profil2.webp"
-        alt="Ma photo de profil Instagram"
-        className="h-full w-full rounded-full object-cover transition-transform duration-500 group-hover:scale-110"
-      />
+      {/* WhatsApp */}
+      <a
+        href={`https://wa.me/${contactInfo.whatsapp.replace(
+          /\D/g,
+          "",
+        )}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group flex items-center gap-3.5 rounded-2xl border border-white/10 bg-white/[0.04] p-3.5 text-sm text-blue-100/80 transition-all duration-300 hover:-translate-y-0.5 hover:border-violet-300/50 hover:bg-white/[0.09] hover:text-white hover:shadow-[0_12px_40px_-15px_rgba(139,92,246,0.7)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400"
+      >
+        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 via-indigo-500 to-violet-600 text-white shadow-lg shadow-blue-600/30 ring-1 ring-inset ring-white/20 transition duration-300 group-hover:scale-105">
+          <MessageCircle
+            className="h-4 w-4"
+            aria-hidden="true"
+          />
+        </span>
+
+        WhatsApp
+      </a>
     </div>
 
-    {/* Badge Instagram */}
-    <span className="absolute bottom-0 right-0 flex h-7 w-7 items-center justify-center rounded-full border-2 border-slate-950 bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 text-white shadow-md">
-      <svg
-        viewBox="0 0 24 24"
-        className="h-4 w-4"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        aria-hidden="true"
-      >
-        <rect x="3" y="3" width="18" height="18" rx="5" />
-        <circle cx="12" cy="12" r="4" />
-        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
-      </svg>
-    </span>
-  </div>
+    {/* Réseaux sociaux */}
+    <div className="relative mt-8 border-t border-white/10 pt-8">
+      <div className="flex flex-wrap items-center gap-6 sm:gap-8">
+        {/* LinkedIn */}
+        <a
+          href={contactInfo.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visiter mon profil LinkedIn"
+          className="group flex flex-col items-center gap-3 focus-visible:outline-none"
+        >
+          {/* Photo circulaire */}
+          <div className="relative h-20 w-20 rounded-full bg-gradient-to-br from-blue-300 via-violet-400 to-blue-500 p-[3px] shadow-[0_10px_35px_-10px_rgba(59,130,246,0.7)] transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-[0_18px_45px_-10px_rgba(139,92,246,0.8)] group-focus-visible:ring-2 group-focus-visible:ring-white sm:h-24 sm:w-24">
+            <div className="h-full w-full overflow-hidden rounded-full bg-slate-900 ring-2 ring-[#0B1022]">
+              <img
+                src="/profil2.webp"
+                alt="Ma photo de profil LinkedIn"
+                className="h-full w-full rounded-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
 
-  <span className="text-sm font-medium text-blue-100 transition-colors group-hover:text-pink-400">
-    Instagram
-  </span>
-</a>
+            {/* Badge LinkedIn */}
+            <span className="absolute bottom-0 right-0 flex h-7 w-7 items-center justify-center rounded-full border-2 border-slate-950 bg-[#0A66C2] text-xs font-bold text-white shadow-md">
+              in
+            </span>
+          </div>
 
+          <span className="text-sm font-medium tracking-wide text-slate-200 transition-colors group-hover:text-blue-300">
+            LinkedIn
+          </span>
+        </a>
 
+        {/* GitHub */}
+        <a
+          href={contactInfo.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visiter mon profil GitHub"
+          className="group flex flex-col items-center gap-3 focus-visible:outline-none"
+        >
+          {/* Photo circulaire */}
+          <div className="relative h-20 w-20 rounded-full bg-gradient-to-br from-blue-300 via-violet-400 to-blue-500 p-[3px] shadow-[0_10px_35px_-10px_rgba(139,92,246,0.7)] transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-[0_18px_45px_-10px_rgba(59,130,246,0.8)] group-focus-visible:ring-2 group-focus-visible:ring-white sm:h-24 sm:w-24">
+            <div className="h-full w-full overflow-hidden rounded-full bg-slate-900 ring-2 ring-[#0B1022]">
+              <img
+                src="/profil.webp"
+                alt="Ma photo de profil GitHub"
+                className="h-full w-full rounded-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+
+            {/* Badge GitHub */}
+            <span className="absolute bottom-0 right-0 flex h-7 w-7 items-center justify-center rounded-full border-2 border-slate-950 bg-[#24292e] text-white shadow-md">
+              <svg
+                viewBox="0 0 24 24"
+                className="h-4 w-4"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.1c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.24-1.62-1.24-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.23.92.1-.72.39-1.21.7-1.49-2.48-.28-5.08-1.24-5.08-5.52 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.05 1.14a10.6 10.6 0 0 1 5.56 0c2.12-1.44 3.05-1.14 3.05-1.14.61 1.54.23 2.68.12 2.96.71.78 1.14 1.78 1.14 3.01 0 4.29-2.6 5.23-5.09 5.51.4.35.75 1.03.75 2.08v3.06c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z" />
+              </svg>
+            </span>
+          </div>
+
+          <span className="text-sm font-medium tracking-wide text-slate-200 transition-colors group-hover:text-violet-300">
+            GitHub
+          </span>
+        </a>
+
+        {/* Instagram */}
+        <a
+          href={contactInfo.instagram}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visiter mon profil Instagram"
+          className="group flex flex-col items-center gap-3 focus-visible:outline-none"
+        >
+          {/* Photo circulaire */}
+          <div className="relative h-20 w-20 rounded-full bg-gradient-to-br from-violet-300 via-indigo-400 to-blue-500 p-[3px] shadow-[0_10px_35px_-10px_rgba(129,140,248,0.7)] transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-[0_18px_45px_-10px_rgba(167,139,250,0.85)] group-focus-visible:ring-2 group-focus-visible:ring-white sm:h-24 sm:w-24">
+            <div className="h-full w-full overflow-hidden rounded-full bg-slate-900 ring-2 ring-[#0B1022]">
+              <img
+                src="/profil2.webp"
+                alt="Ma photo de profil Instagram"
+                className="h-full w-full rounded-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+
+            {/* Badge Instagram */}
+            <span className="absolute bottom-0 right-0 flex h-7 w-7 items-center justify-center rounded-full border-2 border-slate-950 bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 text-white shadow-md">
+              <svg
+                viewBox="0 0 24 24"
+                className="h-4 w-4"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                aria-hidden="true"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+              </svg>
+            </span>
+          </div>
+
+          <span className="text-sm font-medium tracking-wide text-slate-200 transition-colors group-hover:text-indigo-300">
+            Instagram
+          </span>
+        </a>
+      </div>
+    </div>
   </div>
 </div>
-
-            </div>
-          </div>
         </div>
 
         {/* Bas du footer */}

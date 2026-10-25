@@ -29,10 +29,11 @@ const Navbar = () => {
       label: t.nav.pricing,
       href: "#tarifs",
     },
-    {
+   {
       label: t.nav.about,
       href: "#a-propos",
-    },
+    }, 
+    
     {
       label: t.nav.faq,
       href: "#faq",
